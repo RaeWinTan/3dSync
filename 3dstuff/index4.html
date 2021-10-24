@@ -1,0 +1,48 @@
+<!-- Licensed under a BSD license. See license.html for license -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Three.js - Multiple Scenes - Controls</title>
+    <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    #c {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: -1;
+    }
+    *[data-diagram] {
+
+    }
+    .left {
+      height:100%;
+      width:50%;
+      left:0;
+      float:left;
+      position:absolute;
+    }
+    .right {
+      height:100%;
+      width:50%;
+      left:50%;
+      float:left;
+      position:absolute;
+    }
+
+    </style>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <span data-diagram="box" class="left"></span>
+    <span data-diagram="pyramid" class="right"></span>
+  </body>
+<script type="module" src="main4.js"></script>
+</html>
